@@ -9,7 +9,7 @@ services:
 
   redfrio2:
     image: alpine:3.22
-    container_name: redfrio2s
+    container_name: redfrio2
     command: sleep infinity
     networks:
       - redfrio
