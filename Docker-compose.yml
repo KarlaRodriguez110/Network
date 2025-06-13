@@ -1,0 +1,64 @@
+services:
+
+  redfrio1:
+    image: alpine:3.22
+    container_name: redfrio1
+    command: sleep infinity
+    networks: 
+      - redfrio
+
+  redfrio2:
+    image: alpine:3.22
+    container_name: redfrio2git 
+    command: sleep infinity
+    networks:
+      - redfrio
+
+  redfrio3:
+    image: alpine:3.22
+    container_name: redfrio3
+    command: sleep infinity
+    networks:
+      - redfrio
+
+  redfrio4:
+    image: alpine:3.22
+    container_name: redfrio4
+    command: sleep infinity
+    networks:
+      - redfrio
+
+ 
+  redcaliente1:
+    image: alpine:3.22
+    container_name: redcaliente1
+    command: sleep infinity
+    networks:
+      - redcaliente
+
+  redcaliente2:
+    image: alpine:3.22
+    container_name: redcaliente2
+    command: sleep infinity
+    networks:
+      - redcaliente
+
+  redcaliente3:
+    image: alpine:3.22
+    container_name: redcaliente3
+    command: sleep infinity
+    networks:
+      - redcaliente
+
+  redcaliente4:
+    image: alpine:3.22
+    container_name: redcaliente4
+    command: sleep infinity
+    networks:
+      - redcaliente
+
+networks:
+  redfrio:
+    driver: bridge
+  redcaliente:
+    driver: bridge
